@@ -1,0 +1,39 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karel - Varianta 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #game-board {
+            display: grid;
+            grid-template-columns: repeat(10, 40px);
+            grid-template-rows: repeat(10, 40px);
+            gap: 2px;
+        }
+        .cell {
+            width: 40px;
+            height: 40px;
+            border: 1px solid #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .karel {
+            background-color: red;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Karel - Varianta 1</h1>
+    <textarea id="commands" rows="10" cols="30" placeholder="Zadejte příkazy..."></textarea>
+    <button id="execute">Spustit</button>
+    <div id="game-board"></div>
+
+    <script src="index.js"></script>
+</body>
+</html>
