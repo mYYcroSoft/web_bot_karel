@@ -4,6 +4,7 @@ $boardSize = 10;
 $board = array_fill(0, $boardSize * $boardSize, '');
 $karel = ['x' => 0, 'y' => 0, 'direction' => 0]; 
 
+
 function turnLeft(&$karel) {
     $karel['direction']--;
     if ($karel['direction'] < 0) $karel['direction'] = 3;
